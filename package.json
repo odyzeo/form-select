@@ -1,0 +1,142 @@
+{
+    "name": "@odyzeo/form-select",
+    "version": "0.1.0",
+    "description": "Odyzeo form select component with Vue",
+    "author": "Odyzeo <tomas.zamba@odyzeo.com, peter.baricic@odyzeo.com, svetozar.sadecky@odyzeo.com> (https://odyzeo.com)",
+    "main": "dist/form-select.umd.js",
+    "module": "dist/form-select.umd.js",
+    "unpkg": "dist/form-select.min.js",
+    "keywords": [
+        "odyzeo",
+        "form",
+        "select",
+        "vue"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "ISC",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build --target lib --name form-select ./src/plugin/FormSelect.js",
+        "lint": "vue-cli-service lint",
+        "test": "npm run test:unit",
+        "test:e2e": "vue-cli-service test:e2e",
+        "test:unit": "vue-cli-service test:unit"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/odyzeo/form-select.git"
+    },
+    "files": [
+        "dist/*",
+        "src/*",
+        "public/*",
+        "*.json",
+        ".js"
+    ],
+    "dependencies": {
+        "core-js": "^3.1.2",
+        "normalize.css": "^8.0.1",
+        "vue": "^2.6.10"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@vue/cli-plugin-babel": "^4.0.0-alpha.1",
+        "@vue/cli-plugin-e2e-cypress": "^4.0.0-alpha.1",
+        "@vue/cli-plugin-eslint": "^4.0.0-alpha.1",
+        "@vue/cli-plugin-unit-jest": "^4.0.0-alpha.1",
+        "@vue/cli-service": "^4.0.0-alpha.1",
+        "@vue/eslint-config-airbnb": "^4.0.0",
+        "@vue/test-utils": "1.0.0-beta.29",
+        "babel-eslint": "^10.0.1",
+        "babel-jest": "^24.8.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "less": "^3.0.4",
+        "less-loader": "^4.1.0",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/recommended",
+            "@vue/airbnb"
+        ],
+        "rules": {
+            "indent": 0,
+            "vue/script-indent": [
+                2,
+                4
+            ],
+            "vue/html-indent": [
+                2,
+                4
+            ],
+            "vue/require-v-for-key": 1,
+            "vue/html-self-closing": [
+                2,
+                {
+                    "html": {
+                        "normal": "never",
+                        "component": "never"
+                    }
+                }
+            ],
+            "camelcase": 0,
+            "import/no-named-as-default": 0,
+            "import/prefer-default-export": 0,
+            "no-param-reassign": [
+                2,
+                {
+                    "props": false
+                }
+            ]
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "defaults",
+        "> 0.5% in SK"
+    ],
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "jsx",
+            "json",
+            "vue"
+        ],
+        "transform": {
+            "^.+\\.vue$": "vue-jest",
+            ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+            "^.+\\.jsx?$": "babel-jest"
+        },
+        "transformIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "moduleNameMapper": {
+            "^@/(.*)$": "<rootDir>/src/$1"
+        },
+        "snapshotSerializers": [
+            "jest-serializer-vue"
+        ],
+        "testMatch": [
+            "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+        ],
+        "testURL": "http://localhost/",
+        "watchPlugins": [
+            "jest-watch-typeahead/filename",
+            "jest-watch-typeahead/testname"
+        ]
+    }
+}

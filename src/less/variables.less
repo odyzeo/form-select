@@ -1,0 +1,116 @@
+/**
+ * Layout
+ */
+@break-f-min: 1600px;
+@break-f-max: (@break-f-min - 1);
+@container-width: 1180px;
+@container-width-small: 450px;
+@container-width-small-min: (@container-width-small * 2);
+@container-width-small-max: (@container-width-small-min -1);
+@break-l-min: 1240px;
+@break-l-max: (@break-l-min - 1);
+@break-d-min: 1024px;
+@break-d-max: (@break-d-min - 1);
+@break-t-min: 768px;
+@break-t-max: (@break-t-min - 1);
+@break-m-min: 640px;
+@break-m-max: (@break-m-min - 1);
+@break-s-min: 414px; // iPhone 6+
+@break-s-max: (@break-s-min - 1);
+
+@layout-left-t-width: 50%;
+@layout-left-l-width: 50%;
+@layout-left-f-width: 50%;
+
+@layout-right-t-width: (100% - @layout-left-t-width);
+@layout-right-l-width: (100% - @layout-left-l-width);
+@layout-right-f-width: (100% - @layout-left-f-width);
+
+/**
+  * Container
+  */
+@desktop-container-padding: 30px;
+@tablet-container-padding: 25px;
+@mobile-container-padding: 20px;
+
+/**
+  * Grid
+  */
+@grid-padding-s: 5px;
+@grid-padding-m: 5px;
+@grid-padding-t: 5px;
+@grid-padding-d: 5px;
+@grid-padding-l: 5px;
+@grid-padding-f: 5px;
+
+/**
+  * Fonts
+  */
+@font-family--default: 'Open Sans', sans-serif;
+@font-family--primary: 'Arial', sans-serif;
+@font-size--xxsmall: 11px;
+@font-size--xsmall: 12px;
+@font-size--small: 14px;
+@font-size: 15px;
+@font-size--minimum: 16px;
+@font-size--smedium: 16px;
+@font-size--medium: 20px;
+@font-size--large: 24px;
+@font-size--xlarge: 32px;
+@font-size--xxlarge: 40px;
+@font-size--xxxlarge: 45px;
+
+@line-height: 1.73;
+
+/**
+  * Colors
+  */
+@color--default: #616a78;
+@color--primary: #107087;
+@color--primary-dark: #002630;
+@color--primary-from: #15849f;
+@color--primary-to: #06576a;
+@color--secondary: #b38e84;
+@color--background: #fff;
+@color--danger: #df4012;
+@color--success: #38df2f;
+@color--info: #1399c0;
+@color--facebook: #2e4da7;
+@color--twitter: #07a3f4;
+@color--google-plus: #ce4136;
+@color--linkedin: #1676b7;
+@color--grey: #97989B;
+@color--black: #333;
+@color--highlight: #fff9e5;
+@color--border: #d6d8db;
+@color--border-focus: #888888;
+
+/**
+  * Buttons
+  */
+@btn-color: #fff;
+@btn-background: @color--primary;
+@btn-padding: 22px 35px;
+@btn-padding--small: 12px 25px;
+@btn-padding--large: 22px 35px;
+@btn-padding--big: 22px 35px;
+@btn-group-margin: 7px;
+@btn-radius: 4px;
+
+/**
+  * Z indexes
+  */
+@z-hidden: -1;
+@z-overlay: 1000;
+@z-popup: 10000;
+@z-max: 16200;
+@z-alerts: 12000;
+
+@z-layout-left: 1000;
+@z-layout-right: 2000;
+@z-layout-center: 3000;
+
+/**
+* Dashboard
+*/
+@dashboard--container-width: 1200px;
